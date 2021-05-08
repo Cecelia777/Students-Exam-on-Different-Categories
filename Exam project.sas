@@ -6,13 +6,13 @@ options validvarname=v7;
 /* creating the macro variable for both type A and B to cut my original code in half */
 /* Using macro variable for type A and B to simplfy the code */
 %let type = A;
-proc import datafile = "/home/u45036707/Assignment Files/Form&type..csv"
+proc import datafile = "/home/u45036707/Files/Form&type..csv"
 			out = Form&type
 			dbms= csv
 			replace;			
 run;
 
-proc import datafile = "/home/u45036707/Assignment Files/Domains Form&type..csv"
+proc import datafile = "/home/u45036707/Files/Domains Form&type..csv"
 			out = Domain&type
 			dbms = csv
 			replace;
